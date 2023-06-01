@@ -1,0 +1,144 @@
+{
+  "@alliage/module-installer": {
+    "module": "@alliage/module-installer",
+    "deps": [
+      "@alliage/di",
+      "@alliage/lifecycle"
+    ],
+    "envs": [
+      "development"
+    ],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/lifecycle": {
+    "module": "@alliage/lifecycle",
+    "deps": [
+      "@alliage/di"
+    ],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/di": {
+    "module": "@alliage/di",
+    "deps": [],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/error-handler": {
+    "module": "@alliage/error-handler",
+    "deps": [],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/config-loader": {
+    "module": "@alliage/config-loader",
+    "deps": [
+      "@alliage/di",
+      "@alliage/lifecycle"
+    ],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/service-loader": {
+    "module": "@alliage/service-loader",
+    "deps": [
+      "@alliage/config-loader",
+      "@alliage/di",
+      "@alliage/lifecycle",
+      "@alliage/module-installer"
+    ],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/process-manager": {
+    "module": "@alliage/process-manager",
+    "deps": [
+      "@alliage/config-loader",
+      "@alliage/di",
+      "@alliage/lifecycle",
+      "@alliage/service-loader"
+    ],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/builder": {
+    "module": "@alliage/builder",
+    "deps": [
+      "@alliage/config-loader",
+      "@alliage/di",
+      "@alliage/lifecycle",
+      "@alliage/module-installer"
+    ],
+    "envs": [
+      "development"
+    ],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/parameters-loader": {
+    "module": "@alliage/parameters-loader",
+    "deps": [
+      "@alliage/config-loader",
+      "@alliage/di",
+      "@alliage/lifecycle",
+      "@alliage/module-installer"
+    ],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/events-listener-loader": {
+    "module": "@alliage/events-listener-loader",
+    "deps": [
+      "@alliage/di",
+      "@alliage/lifecycle",
+      "@alliage/service-loader"
+    ],
+    "envs": [],
+    "hash": "aec2d52a5eadae917ba9be062a942552"
+  },
+  "@alliage/typescript": {
+    "module": "@alliage/typescript",
+    "deps": [
+      "@alliage/lifecycle",
+      "@alliage/di",
+      "@alliage/config-loader",
+      "@alliage/module-installer",
+      "@alliage/builder"
+    ],
+    "envs": [
+      "development"
+    ],
+    "hash": "f1ca410d6a904695fe523daec5a41614"
+  },
+  "@alliage/webserver": {
+    "module": "@alliage/webserver",
+    "deps": [
+      "@alliage/module-installer",
+      "@alliage/config-loader",
+      "@alliage/process-manager"
+    ],
+    "envs": [],
+    "hash": "5f0dcd17c7514ae45834419d1fa60037"
+  },
+  "@alliage/webserver-express": {
+    "module": "@alliage/webserver-express",
+    "deps": [
+      "@alliage/webserver"
+    ],
+    "envs": [],
+    "hash": "5f0dcd17c7514ae45834419d1fa60037"
+  },
+  "@alliage/rest-api": {
+    "module": "@alliage/rest-api",
+    "deps": [
+      "@alliage/builder",
+      "@alliage/config-loader",
+      "@alliage/di",
+      "@alliage/lifecycle",
+      "@alliage/process-manager",
+      "@alliage/module-installer",
+      "@alliage/webserver"
+    ],
+    "envs": [],
+    "hash": "fc506d682a1c0e415b685311fb57dd4b"
+  }
+}

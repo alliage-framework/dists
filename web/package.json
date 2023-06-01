@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "alliage:install": "alliage-scripts install --env=development --use-typescript",
+    "alliage:build": "alliage-scripts build --env=development --use-typescript",
+    "alliage:run": "alliage-scripts run",
+    "alliage:run:dev": "alliage-scripts run --env=development --use-typescript",
+    "postinstall": "node .scripts/install"
+  },
+  "dependencies": {
+    "@alliage/config-loader": "^0.1.0-beta.3",
+    "@alliage/di": "^0.1.0-beta.3",
+    "@alliage/error-handler": "^0.1.0-beta.3",
+    "@alliage/events-listener-loader": "^0.1.0-beta.3",
+    "@alliage/framework": "^1.0.0-beta.3",
+    "@alliage/lifecycle": "^0.1.0-beta.3",
+    "@alliage/parameters-loader": "^0.1.0-beta.3",
+    "@alliage/process-manager": "^0.1.0-beta.3",
+    "@alliage/service-loader": "^0.1.0-beta.3",
+    "@alliage/webserver": "^0.1.0-beta.0",
+    "@alliage/webserver-express": "^0.1.0-beta.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@alliage/builder": "^0.1.0-beta.3",
+    "@alliage/module-installer": "^0.1.0-beta.3",
+    "@alliage/typescript": "^1.0.0-beta.2",
+    "@types/node": "^20.2.5",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}
