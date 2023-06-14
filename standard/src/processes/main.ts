@@ -8,7 +8,7 @@ export default class MainProcess extends AbstractProcess {
   }
 
   async execute() {
-    process.stdout.write("Hello Alliage !\n");
+    process.stdout.write("Hello, Alliage!\n");
     return true;
   }
 }
