@@ -1,24 +1,27 @@
-# Alliage - Standard distribution
+# Alliage - Web distribution
 
-Welcome to the standard distribution of the Alliage Framework.  
-This distribution comes with the essential modules necessary to build any kind of application you want.
+Welcome to the Web distribution of the Alliage Framework.  
+This distribution comes with the essential modules necessary to build your own webserver.
 
 ## What's inside?
 
 - [Alliage Framework](https://github.com/alliage-framework/framework): The framework itself
 - [Alliage Core](https://github.com/alliage-framework/core): The core modules bringing the essential features
+- [Alliage Web](https://github.com/alliage-framework/web): Modules bringing web capabilities
 
 ## Getting started
 
-The starting point of this application is in the [`src/processes/main.ts`](./src/processes/main.ts). That's from this file that you'll be able to start developping your application.
+The starting point of this application is in the [`src/controllers/main.ts`](./src/processes/main.ts). That's from this file that you'll be able to start developping your web application.
 
 ### Run in development mode
 
 ```
-yarn alliage:run:dev main
+yarn alliage:run:dev web
 ```
 
 This command will execute the source code located in your [`src`](./src) folder. The code will be automatically compiled on the fly and the app will be automatically restarted everytime a change is detected.
+
+To see you application working, you can run a web browser and go to [`http://localhost:8080`](http://localhost:8080)
 
 ### Build
 
@@ -31,7 +34,7 @@ This command will generate a [`dist`](./dist) folder containing the compiled ver
 ### Run in production mode
 
 ```
-yarn alliage:run main
+yarn alliage:run web
 ```
 
 This command will execute the compiled code located in the [`dist`](./dist) folder.
