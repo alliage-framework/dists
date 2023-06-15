@@ -10,10 +10,11 @@ module.exports = {
     "^.+\\.ts?$": [
       "ts-jest",
       {
-        tsconfig: "<rootDir>/../tsconfig.json",
+        tsconfig: "<rootDir>/tsconfig.json",
       },
     ],
   },
-  testMatch: ["<rootDir>/**/*.test.ts"],
+  testMatch: ["<rootDir>/src/**/__tests__/**/*.test.ts"],
   moduleFileExtensions: ["ts", "js", "json", "node"],
+  collectCoverageFrom: ["src/**/*.ts", "!src/**/__tests__/**"],
 };

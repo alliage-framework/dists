@@ -9,7 +9,8 @@
     "alliage:run": "alliage-scripts run",
     "alliage:run:dev": "alliage-scripts run --env=development --use-typescript",
     "test:unit": "jest --coverage",
-    "test:integration": "yarn alliage:build && jest -c ./integration-tests/jest.config.js"
+    "test:integration": "yarn alliage:build && jest -c ./integration-tests/jest.config.js",
+    "postinstall": "node .scripts/install"
   },
   "dependencies": {
     "@alliage/config-loader": "^0.1.0-beta.3",

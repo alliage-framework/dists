@@ -1,6 +1,6 @@
-basePath: '$(ALLIAGE_TS_SERVICES_BASEPATH?dist)'
-paths: [
-  'services/**/*',
-  'processes/**/*',
-  'controllers/**/*'
-]
+basePath: "$(ALLIAGE_TS_SERVICES_BASEPATH?dist)"
+paths:
+  - "services/**/*"
+  - "controllers/**/*"
+exclude:
+  - "**/__tests__/**/*"
