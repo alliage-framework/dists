@@ -1,0 +1,8 @@
+{
+  "copyFiles": [
+    "<projectRoot>/dist",
+    "<projectRoot>/config",
+    "<projectRoot>/tsconfig.json",
+    "<projectRoot>/alliage-modules.json"
+  ]
+}
