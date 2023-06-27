@@ -7,7 +7,7 @@
     "alliage:install": "alliage-scripts install --env=development --use-typescript",
     "alliage:build": "alliage-scripts build --env=development --use-typescript",
     "alliage:run": "alliage-scripts run",
-    "alliage:run:dev": "alliage-scripts run --env=development --use-typescript",
+    "alliage:run:dev": "alliage-scripts run --env=development --use-typescript --watch",
     "test:unit": "jest --coverage",
     "test:integration": "yarn alliage:build && jest -c ./integration-tests/jest.config.js",
     "postinstall": "node .scripts/install"
@@ -30,7 +30,7 @@
     "@alliage/builder": "^0.1.0-beta.3",
     "@alliage/module-installer": "^0.1.0-beta.3",
     "@alliage/sandbox": "^1.0.0-beta.1",
-    "@alliage/typescript": "^1.0.0-beta.2",
+    "@alliage/typescript": "^1.0.0-beta.3",
     "@alliage/webserver-sandbox": "^0.1.0-beta.0",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.2.5",

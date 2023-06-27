@@ -81,10 +81,10 @@
   dependencies:
     glob "^7.1.6"
 
-"@alliage/typescript@^1.0.0-beta.2":
-  version "1.0.0-beta.2"
-  resolved "https://registry.npmjs.org/@alliage/typescript/-/typescript-1.0.0-beta.2.tgz#15e2522553507c43ab636975c9ea192762b70cb8"
-  integrity sha512-PHXM6Te6nfemHGjxUgz3doNNiFEDQBRxi2e4QkiY7TKShSs5nTmC5f+9D49Of6E9wSVVsFcla+u8w3NBMcPQUQ==
+"@alliage/typescript@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.npmjs.org/@alliage/typescript/-/typescript-1.0.0-beta.3.tgz#5187d7704d921f9a4e59d3dfbc623ff8ba306579"
+  integrity sha512-gVAvHNvNKqUGzC82IYpZnQ5un458yl6griIbIfVwnlGUEOe51gq84+rAXS9Zw/4ziVNKZd8seDI845j9DYSuZg==
 
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"

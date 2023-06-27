@@ -67,10 +67,10 @@
   resolved "https://registry.npmjs.org/@alliage/process-manager/-/process-manager-0.1.0-beta.3.tgz#c6275438bb0c950943c037916ac100188a548e16"
   integrity sha512-jtEYJ46ISiQ+YsVgIJtu4WK9gGss5iMCRIq2mp4uwxCYBVzNVxsT33fHbj+diWp+0PGg/5D6X5GmyvaGnjpzdA==
 
-"@alliage/rest-api@^1.0.0-beta.4":
-  version "1.0.0-beta.4"
-  resolved "https://registry.npmjs.org/@alliage/rest-api/-/rest-api-1.0.0-beta.4.tgz#d55276c45a2e05460b6e1db5ae993c917901184a"
-  integrity sha512-J3lFNfn4x32na+WGywQJZ/gds2VjsNj53GlzergDAQXdc6q4a+aB2XJm9KAsoOIdbYev5KauI6qRDYiVVpSaQg==
+"@alliage/rest-api@^1.0.0-beta.6":
+  version "1.0.0-beta.6"
+  resolved "https://registry.npmjs.org/@alliage/rest-api/-/rest-api-1.0.0-beta.6.tgz#37a8970e61a0689cf47f876168728abc53b0a4d8"
+  integrity sha512-Nwh/F8b+tsSFZRDge4V8yiPKjDd8ksQ3PaKhlIuVujqTI1kQvQjqkALhBEq+x22XivcyRLGbAvUTrAC077RkIg==
   dependencies:
     ajv "^8.8.2"
     ajv-formats "^2.1.1"
@@ -94,10 +94,10 @@
   dependencies:
     glob "^7.1.6"
 
-"@alliage/typescript@^1.0.0-beta.2":
-  version "1.0.0-beta.2"
-  resolved "https://registry.npmjs.org/@alliage/typescript/-/typescript-1.0.0-beta.2.tgz#15e2522553507c43ab636975c9ea192762b70cb8"
-  integrity sha512-PHXM6Te6nfemHGjxUgz3doNNiFEDQBRxi2e4QkiY7TKShSs5nTmC5f+9D49Of6E9wSVVsFcla+u8w3NBMcPQUQ==
+"@alliage/typescript@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.npmjs.org/@alliage/typescript/-/typescript-1.0.0-beta.3.tgz#5187d7704d921f9a4e59d3dfbc623ff8ba306579"
+  integrity sha512-gVAvHNvNKqUGzC82IYpZnQ5un458yl6griIbIfVwnlGUEOe51gq84+rAXS9Zw/4ziVNKZd8seDI845j9DYSuZg==
 
 "@alliage/webserver-express@^0.1.0-beta.0":
   version "0.1.0-beta.0"
