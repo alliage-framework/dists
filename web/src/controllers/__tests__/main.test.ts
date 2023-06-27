@@ -1,3 +1,4 @@
+import { describe, it, expect, vi } from "vitest";
 import { AbstractRequest, AbstractResponse } from "@alliage/webserver";
 import MainController from "../main";
 
@@ -9,7 +10,7 @@ function createDummyRequest(ip: string) {
 
 function createDummyResponse() {
   return {
-    setBody: jest.fn() as (body: string) => AbstractResponse,
+    setBody: vi.fn() as (body: string) => AbstractResponse,
   } as AbstractResponse;
 }
 

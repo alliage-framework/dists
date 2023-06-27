@@ -1,3 +1,4 @@
+import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { Sandbox } from "@alliage/sandbox";
 import { WebserverSandbox } from "@alliage/webserver-sandbox";
 
@@ -29,7 +30,7 @@ describe("Main scenario", () => {
 
         expect(res.status).toBe(200);
         expect(res.data).toEqual(
-          "<h1>Welcome on Alliage Web</h1>\n<p>Your ip is: 127.0.0.1</p>"
+          "<h1>Welcome on Alliage Web</h1>\n<p>Your ip is: ::1</p>"
         );
       });
     });

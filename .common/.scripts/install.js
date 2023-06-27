@@ -1,11 +1,11 @@
-const { spawnSync } = require("child_process");
+import { spawnSync } from "node:child_process";
 
 const OPTION_REGEXP = /^\-/;
-const YARN_REGEXP = /yarn/;
+const NPM_REGEXP = /[\/\\]npm[\\/]/;
 const PACKAGE_REGEXP = /^((@[a-z_-]+\/)?([a-z_-]+))(@(.*))?$/;
 
-const isYarn = YARN_REGEXP.test(process.env.npm_execpath);
-const npmArgs = !isYarn
+const isNpm = NPM_REGEXP.test(process.env.npm_execpath || '');
+const npmArgs = isNpm
   ? "run alliage:install -- {package}"
   : "alliage:install {package}";
 
@@ -13,15 +13,15 @@ if (process.env.npm_config_argv) {
   const packages = JSON.parse(process.env.npm_config_argv)
     .original.slice(1)
     .filter((arg) => !OPTION_REGEXP.test(arg))
-    .map((package) => {
-      const res = PACKAGE_REGEXP.exec(package);
+    .map((pkg) => {
+      const res = PACKAGE_REGEXP.exec(pkg);
       return res[1];
     });
 
-  packages.forEach((package) => {
+  packages.forEach((pkg) => {
     spawnSync(
       process.env.npm_execpath,
-      npmArgs.replace("{package}", package).split(" "),
+      npmArgs.replace("{package}", pkg).split(" "),
       { stdio: "inherit" }
     );
   });

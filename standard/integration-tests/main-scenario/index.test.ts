@@ -1,3 +1,4 @@
+import { describe, it, expect, beforeAll, afterAll, vi } from "vitest";
 import { Sandbox } from "@alliage/sandbox";
 
 describe("Main scenario", () => {
@@ -6,11 +7,7 @@ describe("Main scenario", () => {
   });
 
   beforeAll(async () => {
-    try {
-      await sandbox.init();
-    } catch (e) {
-      console.error(e);
-    }
+    await sandbox.init();
   });
 
   afterAll(async () => {
@@ -19,7 +16,7 @@ describe("Main scenario", () => {
 
   describe("Main process", () => {
     it("should say hello", async () => {
-      const dataSpy = jest.fn();
+      const dataSpy = vi.fn();
       const { process: mainProcess, waitCompletion } = sandbox.run(["main"]);
 
       mainProcess.stdout?.on("data", dataSpy);

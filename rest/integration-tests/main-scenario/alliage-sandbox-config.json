@@ -2,7 +2,7 @@
   "copyFiles": [
     "<projectRoot>/dist",
     "<projectRoot>/config",
-    "<projectRoot>/tsconfig.json",
+    "<projectRoot>/package.json",
     "<projectRoot>/alliage-modules.json",
     "<projectRoot>/.alliage-rest-api-metadata.json"
   ]

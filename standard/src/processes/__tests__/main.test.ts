@@ -1,3 +1,4 @@
+import { describe, it, expect, vi } from "vitest";
 import MainProcess from "../main";
 
 describe("processes/main", () => {
@@ -12,7 +13,7 @@ describe("processes/main", () => {
 
     describe("#execute", () => {
       it("should display a welcome message and return true", async () => {
-        const writeSpy = jest.spyOn(process.stdout, "write");
+        const writeSpy = vi.spyOn(process.stdout, "write");
 
         const res = await mainProcess.execute();
 

@@ -1,62 +1,99 @@
-# Alliage - Web distribution
+# 🚀 Alliage Web Distribution
 
-Welcome to the Web distribution of the Alliage Framework.  
-This distribution comes with the essential modules necessary to build your own webserver.
+> **Build powerful web applications with ease using the Alliage Framework**
 
-## What's inside?
+Welcome to the **Web distribution** of the Alliage Framework! This pre-configured setup provides everything you need to create modern, scalable web applications with TypeScript and a robust architectural foundation.
 
-- [Alliage Framework](https://github.com/alliage-framework/framework): The framework itself
-- [Alliage Core](https://github.com/alliage-framework/core): The core modules bringing the essential features
-- [Alliage Web](https://github.com/alliage-framework/web): Modules bringing web capabilities
+---
 
-## Getting started
+## ✨ What's Inside?
 
-The starting point of this application is in the [`src/controllers/main.ts`](./src/processes/main.ts). That's from this file that you'll be able to start developping your web application.
+This distribution comes bundled with three powerful components:
 
-### Run in development mode
+| Component | Description |
+|-----------|-------------|
+| 🏗️ **[Alliage Framework](https://github.com/alliage-framework/framework)** | The core framework providing architectural foundations |
+| ⚡ **[Alliage Core](https://github.com/alliage-framework/core)** | Essential modules for dependency injection, configuration, and more |
+| 🌐 **[Alliage Web](https://github.com/alliage-framework/web)** | Web-specific capabilities including routing, middleware, and server management |
 
-```
+---
+
+## 🎯 Quick Start
+
+Ready to build your web application? Start by exploring your main entry point:
+
+📁 **[`src/controllers/main.ts`](./src/processes/main.ts)** - Your application's starting point
+
+### 🔥 Development Mode
+
+Get up and running in seconds:
+
+```bash
 yarn alliage:run:dev web
 ```
 
-This command will execute the source code located in your [`src`](./src) folder. The code will be automatically compiled on the fly and the app will be automatically restarted everytime a change is detected.
+✅ **What happens:**
+- 🔄 Automatic code compilation on-the-fly
+- 🔃 Hot reload on file changes
+- 📊 Real-time development feedback
 
-To see you application working, you can run a web browser and go to [`http://localhost:8080`](http://localhost:8080)
+🌍 **View your app:** Open [http://localhost:8080](http://localhost:8080) in your browser
 
-### Build
+### 📦 Production Build
 
-```
+Create an optimized build for deployment:
+
+```bash
 yarn alliage:build
 ```
 
-This command will generate a [`dist`](./dist) folder containing the compiled version of your source code.
+📂 This generates a `dist/` folder with your compiled, production-ready code.
 
-### Run in production mode
+### 🚀 Production Mode
 
-```
+Run your optimized application:
+
+```bash
 yarn alliage:run web
 ```
 
-This command will execute the compiled code located in the [`dist`](./dist) folder.
+---
 
-## Tests
+## 🧪 Testing
 
-### Unit tests
+### Unit Tests 🔬
 
-The unit tests files can be located at any level of the [`src`](./src) folder. They must be inside a `__tests__` folder and their name must end with `.test.ts`.
+Write unit tests anywhere in your `src/` folder following this structure:
+- 📁 Place tests in `__tests__/` folders
+- 📝 Name files with `.test.ts` extension
 
-To run them, use the following command:
-
-```
+```bash
 yarn test:unit
 ```
 
-### Integration tests
+### Integration Tests 🔧
 
-The integration tests are located in the [`integration-test`](./integration-tests/) folder.
+Full application testing located in `integration-tests/`:
 
-To run them, use the following command:
-
-```
+```bash
 yarn test:integration
 ```
+
+---
+
+## 📖 Next Steps
+
+1. **🎨 Customize your controllers** - Add your business logic
+2. **🔧 Configure middleware** - Handle authentication, logging, etc.
+3. **📊 Set up your database** - Connect to your preferred data store
+4. **🚀 Deploy** - Take your app to production
+
+---
+
+<div align="center">
+
+**Happy coding! 🎉**
+
+*Built with ❤️ using the Alliage Framework*
+
+</div>

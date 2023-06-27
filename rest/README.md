@@ -1,67 +1,118 @@
-# Alliage - REST distribution
+# 🔥 Alliage REST API Distribution
 
-Welcome to the Web distribution of the Alliage Framework.  
-This distribution comes with the essential modules necessary to build your own REST API.
+> **Build powerful, scalable REST APIs with automatic OpenAPI documentation**
 
-## What's inside?
+Welcome to the **REST API distribution** of the Alliage Framework! This specialized setup provides everything you need to create modern, well-documented REST APIs with TypeScript, featuring automatic OpenAPI schema generation and robust architectural foundations.
 
-- [Alliage Framework](https://github.com/alliage-framework/framework): The framework itself
-- [Alliage Core](https://github.com/alliage-framework/core): The core modules bringing the essential features
-- [Alliage Web](https://github.com/alliage-framework/web): Modules bringing web capabilities
-- [Alliage REST API](https://github.com/alliage-framework/rest-api): Modules bringing REST API capabilities
+---
 
-## Getting started
+## ✨ What's Inside?
 
-The starting point of this application is in the [`src/controllers/main.ts`](./src/processes/main.ts). That's from this file that you'll be able to start developping your REST API.
+This distribution comes loaded with four powerful components for REST API development:
 
-### Run in development mode
+| Component | Description |
+|-----------|-------------|
+| 🏗️ **[Alliage Framework](https://github.com/alliage-framework/framework)** | The core framework providing architectural foundations |
+| ⚡ **[Alliage Core](https://github.com/alliage-framework/core)** | Essential modules for dependency injection, configuration, and more |
+| 🌐 **[Alliage Web](https://github.com/alliage-framework/web)** | Web capabilities including routing, middleware, and server management |
+| 🚀 **[Alliage REST API](https://github.com/alliage-framework/rest-api)** | Advanced REST API features with automatic OpenAPI documentation |
 
-```
+🎯 **Perfect for:** Microservices, backend APIs, data services, and any application requiring well-documented REST endpoints.
+
+---
+
+## 🎯 Quick Start
+
+Ready to build your REST API? Start by exploring your main entry point:
+
+📁 **[`src/controllers/main.ts`](./src/processes/main.ts)** - Your API's starting point
+
+### 🔥 Development Mode
+
+Get your API running in seconds:
+
+```bash
 yarn alliage:run:dev web
 ```
 
-This command will execute the source code located in your [`src`](./src) folder. The code will be automatically compiled on the fly and the app will be automatically restarted everytime a change is detected.
+✅ **What happens:**
+- 🔄 Automatic code compilation on-the-fly
+- 🔃 Hot reload on file changes
+- 📊 Real-time development feedback
+- 📝 Automatic OpenAPI schema generation
 
-To see you application working, you can run a web browser and go to [`http://localhost:8080/api/hello/John`](http://localhost:8080/api/hello/John)
+🌍 **Test your API:** Open [http://localhost:8080/api/hello/John](http://localhost:8080/api/hello/John) in your browser
 
-The OpenAPI schema will be automatically generated and available from [`http://localhost:8080/api/specs`](http://localhost:8080/api/specs)
+📚 **View API Documentation:** Check out the auto-generated OpenAPI specs at [http://localhost:8080/api/specs](http://localhost:8080/api/specs)
 
-### Build
+### 📦 Production Build
 
-```
+Create an optimized build for deployment:
+
+```bash
 yarn alliage:build
 ```
 
-This command will generate a [`dist`](./dist) folder containing the compiled version of your source code.
+📂 **What gets generated:**
+- `dist/` folder with your compiled, production-ready code
+- `alliage-rest-api-metadata.json` file for OpenAPI schema generation
 
-This will also generate the REST API metadata file `alliage-rest-api-metadata.json` necessary to create the OpenAPI schema of your API.
+### 🚀 Production Mode
 
-### Run in production mode
+Run your optimized API:
 
-```
+```bash
 yarn alliage:run web
 ```
 
-This command will execute the compiled code located in the [`dist`](./dist) folder.
+---
 
-## Tests
+## 🧪 Testing
 
-### Unit tests
+### Unit Tests 🔬
 
-The unit tests files can be located at any level of the [`src`](./src) folder. They must be inside a `__tests__` folder and their name must end with `.test.ts`.
+Write unit tests anywhere in your `src/` folder following this structure:
+- 📁 Place tests in `__tests__/` folders
+- 📝 Name files with `.test.ts` extension
 
-To run them, use the following command:
-
-```
+```bash
 yarn test:unit
 ```
 
-### Integration tests
+### Integration Tests 🔧
 
-The integration tests are located in the [`integration-test`](./integration-tests/) folder.
+Full API testing located in `integration-tests/`:
 
-To run them, use the following command:
-
-```
+```bash
 yarn test:integration
 ```
+
+---
+
+## 🚀 Key Features
+
+### 📝 Automatic OpenAPI Documentation
+- **Zero-config documentation** - Your API schema is generated automatically
+- **Interactive specs** - Browse and test your endpoints directly
+- **Always up-to-date** - Documentation stays in sync with your code
+
+---
+
+## 📖 Next Steps
+
+1. **🎨 Design your API endpoints** - Plan your resource structure and routes
+2. **🔧 Add authentication & middleware** - Secure your API and add cross-cutting concerns
+3. **📊 Connect your data layer** - Integrate with your preferred database or services
+4. **🧪 Write comprehensive tests** - Ensure API reliability and contract compliance
+5. **📚 Customize documentation** - Enhance your OpenAPI specs with descriptions and examples
+6. **🚀 Deploy with confidence** - Take your API to production
+
+---
+
+<div align="center">
+
+**Build amazing APIs! 🎉**
+
+*Powered by ❤️ and the Alliage Framework*
+
+</div>

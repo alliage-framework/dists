@@ -4,6 +4,10 @@ schema:
 metadata:
   sources: ["src/controllers/*"]
   path: ".alliage-rest-api-metadata.json"
+allowedOrigins:
+  - origin: $(ALLOWED_ORIGIN?http://localhost)
+    headers: ["*"]
+    methods: ["*"]
 validation:
   requests:
     # Enables automatic validation of the requests

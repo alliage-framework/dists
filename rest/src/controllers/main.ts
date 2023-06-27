@@ -2,6 +2,9 @@ import { Service } from "@alliage/service-loader";
 import { AbstractController, AbstractRequest, Get } from "@alliage/webserver";
 
 interface Params {
+  /**
+   * @pattern "^[a-zA-Z]+$"
+   */
   name: string;
 }
 
