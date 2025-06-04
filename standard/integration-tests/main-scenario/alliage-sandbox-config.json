@@ -1,0 +1,8 @@
+{
+  "copyFiles": [
+    "<projectRoot>/dist",
+    "<projectRoot>/config",
+    "<projectRoot>/alliage-modules.json",
+    "<projectRoot>/package.json"
+  ]
+}

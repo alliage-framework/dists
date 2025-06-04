@@ -1,0 +1,8 @@
+tasks:
+  - name: typescript
+    description: Compile TypeScript code
+    params:
+      projectPath: './tsconfig.json'
+  - name: rest-generate-schema
+    description: Generate REST API Schema
+    params: {}
