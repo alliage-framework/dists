@@ -1,0 +1,40 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "alliage:install": "alliage-scripts install --env=development --use-typescript",
+    "alliage:build": "alliage-scripts build --env=development --use-typescript",
+    "alliage:run": "alliage-scripts run",
+    "alliage:run:dev": "alliage-scripts run --env=development --use-typescript --watch",
+    "test:unit": "NODE_ENV=test vitest run --coverage",
+    "test:integration": "NODE_ENV=test vitest run --config ./integration-tests/vitest.config.ts",
+    "postinstall": "node .scripts/install"
+  },
+  "dependencies": {
+    "@alliage/config-loader": "^0.1.0-beta.8",
+    "@alliage/di": "^0.1.0-beta.8",
+    "@alliage/error-handler": "^0.1.0-beta.8",
+    "@alliage/events-listener-loader": "^0.1.0-beta.8",
+    "@alliage/framework": "^1.0.0-beta.5",
+    "@alliage/lifecycle": "^0.1.0-beta.8",
+    "@alliage/parameters-loader": "^0.1.0-beta.8",
+    "@alliage/process-manager": "^0.1.0-beta.8",
+    "@alliage/service-loader": "^0.1.0-beta.8"
+  },
+  "devDependencies": {
+    "@alliage/builder": "^0.1.0-beta.8",
+    "@alliage/module-installer": "^0.1.0-beta.8",
+    "@alliage/sandbox": "^1.0.0-beta.4",
+    "@alliage/typescript": "^1.0.0-beta.5",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.30",
+    "@vitest/coverage-v8": "^3.2.2",
+    "jest": "^29.7.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  }
+}
